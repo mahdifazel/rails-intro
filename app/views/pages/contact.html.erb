@@ -1,0 +1,14 @@
+<p>contact</p>
+<h2>Meet our team</h2>
+
+<form action="/contact">
+<label for="member">Input name</label>
+<input id="member" name="member" type="text">
+<input type="submit">
+
+</form>
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
